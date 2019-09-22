@@ -1,12 +1,16 @@
 import React from 'react';
+import Container from './components/Container'
 
 const Planets = (props) => {
   return (
-    props.planets.map( planet =>
+    <Container>
+    {props.planets.map( planet =>
       <div>
-        {planet.name}
+        <h1>{planet.name}</h1>
       </div>
-    )
+      )
+    }
+    </Container>
   )
 }
 
