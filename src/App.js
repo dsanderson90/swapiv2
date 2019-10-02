@@ -25,6 +25,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    
     Promise.all([
       fetch('https://swapi.co/api/films/'),
       fetch('https://swapi.co/api/people/'),
